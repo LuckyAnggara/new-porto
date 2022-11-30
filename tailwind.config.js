@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         lato: ['Lato', 'sans-serif'],
+        solway: ['Solway', 'sans-serif'],
       },
     },
   },

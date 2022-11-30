@@ -1,7 +1,7 @@
 <template>
-  <div class="h-full justify-center flex flex-col">
+  <div class="flex-col flex">
     <span class="tracking-wide font-bold text-6xl px-3 text-gray-700"
-      >Jhon Doe Oyy</span
+      >Lucky Anggara</span
     >
     <span class="tracking-normal text-2xl px-3 text-gray-700">
       Hi, I'm a

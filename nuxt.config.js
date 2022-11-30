@@ -65,6 +65,7 @@ export default {
   googleFonts: {
     families: {
       Roboto: [100, 300, 400],
+      Solway: [100, 300, 400],
       Lato: true,
     },
   },
