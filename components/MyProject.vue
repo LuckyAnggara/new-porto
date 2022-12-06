@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-full min-w-full place-self-start flex flex-col">
+  <div class="min-w-full flex flex-col p-16">
     <div class="flex flex-col items-center">
       <div>
         <span class="tracking-normal font-bold text-3xl text-gray-700"
@@ -55,7 +55,6 @@
 </template>
 <script>
 export default {
-  layout: 'master',
   setup() {
     const projects = [
       {

@@ -6,8 +6,8 @@
     <div class="flex flex-col justify-between">
       <div>
         <div class="fixed flex flex-col space-y-4 w-fit z-10 top-80 p-8">
-          <NuxtLink
-            to="/home"
+          <a
+            href="#aboutme"
             class="bg-gray-700 text-white px-3 py-2 rounded-xl text-sm font-medium flex w-14 outline-none transition-all duration-700 ease-in-out hover:w-28 justify-start group/item"
           >
             <svg
@@ -27,7 +27,7 @@
               class="absolute opacity-0 group-hover/item:opacity-100 self-center transition-opacity duration-100 delay-200 ease-in-out ml-10"
               >Home</span
             >
-          </NuxtLink>
+          </a>
 
           <NuxtLink
             to="/about"
@@ -99,8 +99,7 @@
           </NuxtLink>
         </div>
         <div class="flex place-items-end bg-white/80">
-          <div class="w-2/12"></div>
-          <div class="relative w-10/12 p-16 min-h-screen flex items-center">
+          <div class="h-full w-full flex px-16">
             <Nuxt />
           </div>
         </div>
@@ -114,10 +113,14 @@
               <font-awesome-icon icon="fa-brands fa-instagram" size="lg" />
             </span>
             <p
-              class="mt-5 text-base leading-6 text-center text-gray-500 font-solway"
+              class="mt-3 leading-2 text-center text-gray-500 font-solway text-sm"
             >
-              The website is build on NuxtJS. Thanks for visiting ❤️ & have a
-              nice day
+              The website is Built by Lucky Anggara using Nuxt Js.
+            </p>
+            <p
+              class="mb-2 leading-2 text-center text-gray-500 font-solway text-sm"
+            >
+              Thanks for visiting ❤️ nice day
             </p>
           </div>
         </div>
