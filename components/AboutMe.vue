@@ -20,7 +20,7 @@
           class="relative rounded-xl border-indigo-200 mx-auto border border-spacing-1 w-44"
         >
           <img
-            src="avatar.png"
+            src="avatar_2.jpg"
             class="z-40 bottom-0 rounded-xl p-4"
             alt="Avatar"
           />
@@ -75,7 +75,7 @@
 <script>
 export default {
   setup() {
-    const stacks = ['Javascript', 'VUe Js', 'Laravel', 'Flutter']
+    const stacks = ['Javascript', 'Vue Js', 'Laravel', 'Flutter']
 
     return {
       stacks,

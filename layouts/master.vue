@@ -1,13 +1,14 @@
 <template>
   <div
     class="relative bg-fixed bg-center bg-cover bg-no-repeat font-lato min-h-screen"
-    style="background-image: url(background.jpg)"
+    style="background-image: url(background_2.jpg)"
   >
     <div class="flex flex-col justify-between">
       <div>
         <div class="fixed flex flex-col space-y-4 w-fit z-10 top-80 p-8">
           <a
-            href="#aboutme"
+            v-smooth-scroll
+            href="#homesweethome"
             class="bg-gray-700 text-white px-3 py-2 rounded-xl text-sm font-medium flex w-14 outline-none transition-all duration-700 ease-in-out hover:w-28 justify-start group/item"
           >
             <svg
@@ -29,8 +30,9 @@
             >
           </a>
 
-          <NuxtLink
-            to="/about"
+          <a
+            v-smooth-scroll
+            href="#aboutme"
             class="bg-gray-700 text-white px-3 py-2 rounded-xl text-sm font-medium flex w-14 outline-none transition-all duration-700 ease-in-out hover:w-28 justify-start group/item"
           >
             <svg
@@ -50,10 +52,11 @@
               class="absolute opacity-0 group-hover/item:opacity-100 self-center transition-opacity duration-100 delay-200 ease-in-out ml-10"
               >About</span
             >
-          </NuxtLink>
+          </a>
 
-          <NuxtLink
-            to="/portofolio"
+          <a
+            v-smooth-scroll
+            href="#myproject"
             class="bg-gray-700 text-white px-3 py-2 rounded-xl text-sm font-medium flex w-14 outline-none transition-all duration-700 ease-in-out hover:w-32 justify-start group/item"
           >
             <svg
@@ -73,10 +76,11 @@
               class="absolute opacity-0 group-hover/item:opacity-100 self-center transition-opacity duration-200 delay-100 ease-in-out ml-10"
               >Portofolio</span
             >
-          </NuxtLink>
+          </a>
 
-          <NuxtLink
-            to="/contact"
+          <a
+            v-smooth-scroll
+            href="#callme"
             class="bg-gray-700 text-white px-3 py-2 rounded-xl text-sm font-medium flex w-14 outline-none transition-all duration-700 ease-in-out hover:w-30 justify-start group/item"
           >
             <svg
@@ -96,21 +100,23 @@
               class="absolute opacity-0 group-hover/item:opacity-100 self-center transition-opacity duration-100 delay-200 ease-in-out ml-10"
               >Contact</span
             >
-          </NuxtLink>
+          </a>
         </div>
-        <div class="flex place-items-end bg-white/80">
+        <div class="flex place-items-end bg-white/90">
           <div class="h-full w-full flex px-16">
             <Nuxt />
           </div>
         </div>
       </div>
       <div class="grow">
-        <div class="bg-white/80 w-full p-6">
+        <div class="bg-white/90 w-full p-6">
           <div class="">
             <span class="px-3 mt-3 space-x-4 text-gray-700 flex justify-center">
-              <font-awesome-icon icon="fa-brands fa-tiktok " size="lg" />
-              <font-awesome-icon icon="fa-brands fa-github" size="lg" />
-              <font-awesome-icon icon="fa-brands fa-instagram" size="lg" />
+              <div v-for="call in calls" :key="call.id">
+                <a :href="call.link">
+                  <font-awesome-icon :icon="call.icon" :size="call.size" />
+                </a>
+              </div>
             </span>
             <p
               class="mt-3 leading-2 text-center text-gray-500 font-solway text-sm"
@@ -132,8 +138,27 @@
 <script>
 export default {
   setup() {
+    const calls = [
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-tiktok',
+        size: 'lg',
+      },
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-github',
+        size: 'lg',
+      },
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-instagram',
+        size: 'lg',
+      },
+    ]
     // don't forget to expose the function as well.
-    return {}
+    return {
+      calls,
+    }
   },
 }
 </script>

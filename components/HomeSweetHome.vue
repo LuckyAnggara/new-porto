@@ -1,5 +1,8 @@
 <template>
-  <div class="min-h-screen min-w-full flex items-center p-16">
+  <div
+    id="homesweethome"
+    class="min-h-screen min-w-full flex items-center p-16"
+  >
     <div class="flex-col flex ml-24">
       <span class="tracking-wide font-bold text-6xl px-3 text-gray-700"
         >Lucky Anggara</span
@@ -68,8 +71,27 @@ export default {
       setTimeout(typeText, newTextDelay + 200)
     })
 
-    // don't forget to expose the function as well.
+    const calls = [
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-tiktok',
+        size: 'lg',
+      },
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-github',
+        size: 'lg',
+      },
+      {
+        link: 'https://github.com/LuckyAnggara',
+        icon: 'fa-brands fa-instagram',
+        size: 'lg',
+      },
+    ]
+
     return {
+      calls,
+
       typeStatus,
       typeValue,
     }
