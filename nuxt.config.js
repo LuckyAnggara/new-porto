@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-porto2',
+    title: 'Lucky Anggara',
     htmlAttrs: {
       lang: 'en',
     },
