@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-20">
+    <div class="flex justify-center mt-24">
       <span
         class="tracking-normal font-bold font-solways text-6xl text-gray-700"
         >bug.rto@gmail.com</span
