@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative bg-fixed bg-center bg-cover bg-no-repeat font-lato min-h-screen"
-    style="background-image: url(background_2.jpg)"
+    :style="{ backgroundImage: `url(${image})` }"
   >
     <div class="flex flex-col justify-between">
       <div>
@@ -136,8 +136,10 @@
 </template>
 
 <script>
+import BackgroundImage from '@/assets/img/background_2.jpg'
 export default {
   setup() {
+    const image = BackgroundImage
     const calls = [
       {
         link: 'https://github.com/LuckyAnggara',
@@ -158,6 +160,7 @@ export default {
     // don't forget to expose the function as well.
     return {
       calls,
+      image,
     }
   },
 }
