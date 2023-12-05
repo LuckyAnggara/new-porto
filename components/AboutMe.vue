@@ -20,7 +20,7 @@
           class="relative rounded-xl border-indigo-200 mx-auto border border-spacing-1 w-44"
         >
           <img
-            src="~/assets/img/avatar_2.jpg"
+            src="~/static/img/avatar_2.jpg"
             class="z-40 bottom-0 rounded-xl p-4"
             alt="Avatar"
           />
