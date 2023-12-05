@@ -136,7 +136,7 @@
 </template>
 
 <script>
-import BackgroundImage from '@/static/img/background_2.jpg'
+import BackgroundImage from '@/static/img/backgrounds.jpg'
 export default {
   setup() {
     const image = BackgroundImage
