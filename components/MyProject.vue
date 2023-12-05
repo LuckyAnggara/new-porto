@@ -24,7 +24,7 @@
           <div class="rounded-sm shadow-lg bg-gray-700 max-w-sm h-72">
             <div class="p-6">
               <div class="flex flex-row justify-end mb-8">
-                <a href="">
+                <a :href="project.link">
                   <font-awesome-icon
                     icon="fa-solid fa-up-right-from-square"
                     class="text-white/60"
@@ -58,39 +58,38 @@ export default {
   setup() {
     const projects = [
       {
-        name: 'Siap Baper',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+        name: 'POS Account Solution',
+        desc: 'Currently my Project Apps',
         git: 'https://github.com/LuckyAnggara',
         stacks: ['Laravel', 'Vue Js', 'Flutter'],
       },
       {
-        name: 'Quasir BBM',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+        name: 'Siap Baper',
+        desc: 'Invetory Management Apps',
         git: 'https://github.com/LuckyAnggara',
+        link: 'https://youtu.be/f3QAYlGAwXc?si=Nm9JGbrldQj3OHLk',
+        stacks: ['Laravel', 'Vue Js', 'Flutter'],
+      },
+      {
+        name: 'Enterprise Solution',
+        desc: 'One App with Rich Feature, from Inventory Management, Invoice Maker, and Reporting',
+        git: 'https://github.com/LuckyAnggara',
+        link: 'https://drive.google.com/drive/folders/1MKvfVAHr6TGlsZVPkrEOJl49RB9umX6S?usp=sharing',
         stacks: ['Codeigniter'],
       },
       {
         name: 'BBM Manufacturing',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+        desc: '',
         git: 'https://github.com/LuckyAnggara',
+        link: 'https://drive.google.com/drive/folders/1iDflG4O7NQu2u6sFWWboL7FOSYoXF9dp?usp=sharing',
         stacks: ['Laravel', 'Vue Js', 'Flutter'],
       },
+
       {
-        name: 'Quran App',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
+        name: 'Laporan Kinerja',
+        desc: 'Goverment Enterprise Resource Management to Generete Monthly Report with Easy',
         git: 'https://github.com/LuckyAnggara',
-        stacks: ['Flutter'],
-      },
-      {
-        name: 'BBM Apps',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
-        git: 'https://github.com/LuckyAnggara',
-        stacks: ['Laravel', 'Vue Js', 'Flutter'],
-      },
-      {
-        name: 'Katalis',
-        desc: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
-        git: 'https://github.com/LuckyAnggara',
+        link: 'https://drive.google.com/file/d/1UQY6aTkgod8wpwG7w_NJj-F8bjEnKKo7/view?usp=sharing',
         stacks: ['Laravel', 'Vue Js', 'Flutter'],
       },
     ]

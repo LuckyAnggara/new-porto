@@ -51,8 +51,8 @@
           class="text-gray-700 antialiased tracking-wide leading-relaxed text-justify"
         >
           My main focus these days is building
-          <a class="text-bold text-indigo-700 font-bold">Quran App</a> that can
-          be use for anyone. Here are a few tech stack i've been using recently
+          <a class="text-bold text-indigo-700 font-bold">Point Of Sales App</a>
+          with Accounting Solution Feature.
         </p>
         <div>
           <p
@@ -75,7 +75,7 @@
 <script>
 export default {
   setup() {
-    const stacks = ['Javascript', 'Vue Js', 'Laravel', 'Flutter']
+    const stacks = ['Vue Js', 'Laravel (Usualy for Backend)', 'Flutter']
 
     return {
       stacks,
